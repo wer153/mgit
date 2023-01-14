@@ -1,3 +1,33 @@
+# 1. 초기 구성
+
+- `poetry run mgit` 명령으로 프로그램을 실행할 수 있어야 한다.
+- 동작해야 하는 명령어:
+    - 다음 동작이 `git`의 경우와 동일해야 한다.
+        - help 메시지 출력
+            
+            ```
+            사용법: mgit [-v | --version] [-h | --help] <command> [<args>]
+            
+            다음은 여러가지 상황에서 자주 사용하는 mgit 명령입니다:
+            
+            내부 명령어
+               hash-object   객체 해시와 관련된 작업
+            ```
+            
+            - `mgit`
+            - `mgit -h`
+            - `mgit --help`
+        - version 출력
+            
+            ```
+            mgit version 0.1.0
+            ```
+            
+            - `mgit -v`
+            - `mgit --version`
+            - `mgit version`
+
+
 # Python Library
 
 ![Build](https://github.com/8percent/python-library/actions/workflows/ci.yml/badge.svg)
